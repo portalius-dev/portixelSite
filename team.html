@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portixel</title>
+    <br>
+    <center><a href="index.html"><img class="logoAnim" src="logo.png"></a></center>
+    <style>
+        @font-face {
+    font-family: 'Monsterrat';
+    src: url('font.ttf') format('truetype'); /* замените путь на фактический путь к файлу шрифта */
+}
+
+h1 {
+    font-family: 'Monsterrat', sans-serif; / применяем шрифт к заголовку h1 /
+    text-transform: uppercase;
+  background: linear-gradient(90deg, #ffffff 10%, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: 20px auto;
+}
+
+body {   
+/* Местоположение фоновой картинки */   background-image: url(fon.png);      
+/* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */   background-position: center center;      
+/* Фон не повторяется */   background-repeat: no-repeat;      
+/* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */   background-attachment: fixed;      
+/* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/   background-size: cover;      
+/* Цвет фона, который будет отображаться при загрузке фоновой картинки*/   background-color: #464646; }
+
+ /* Стили для логотипа */.logoAnim {
+    transition: transform 0.3s ease; /* Анимация увеличения */
+        }
+        /* Анимация увеличения при наведении курсора */.logoAnim:hover {
+            transform: scale(1.1); /* Увеличиваем размер логотипа */
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+    </header>
+    <br>
+    <center><h1 class="slogan">Наша команда</h1></center>
+    <br>
+    <center><a href="https://www.youtube.com/channel/UCLkuJvj-t1aKCPQgm6963vw"><h1 class="team">HOROSHIY (Тех-админ, помощник создателя)</h1></a></center>
+    <br>
+    <center><a href="https://www.youtube.com/@prtls"><h1 class="team">Portalius (Создатель)</h1></a></center>
+    <br>
+    <center><a href="https://www.youtube.com/@Mando_Minnedalorian"><h1 class="team">Minnedalorian (Главный строитель)</h1></a></center>
+    <br>
+    <center><a href="https://www.youtube.com/channel/UCcpQFQ7iW4ePWftaAgA-l4A"><h1 class="team">Aser (Строитель)</h1></a></center>
+    <br>
+    <center><a href="https://www.youtube.com/channel/UCZu9mRSM6LlrrZY_q9-cA9g"><h1 class="team">GlobikUwUn (Строитель)</h1></a></center>
+    <br>
+    <center><a href="https://www.youtube.com/@SenPlay_ "><h1 class="team">SenPlay (Декоратор)</h1></a></center>
+</body>
+</html>

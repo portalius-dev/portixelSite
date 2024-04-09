@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portixel</title>
+    <br>
+    <center><a href="index.html"><img class="logoAnim" src="logo.png"></a></center>
+    <style>
+        @font-face {
+    font-family: 'Monsterrat';
+    src: url('font.ttf') format('truetype'); /* замените путь на фактический путь к файлу шрифта */
+}
+
+h1 {
+    font-family: 'Monsterrat', sans-serif; / применяем шрифт к заголовку h1 /
+    text-transform: uppercase;
+  background: linear-gradient(90deg, #ffffff 10%, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: 20px auto;
+}
+
+body {   
+/* Местоположение фоновой картинки */   background-image: url(fon.png);      
+/* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */   background-position: center center;      
+/* Фон не повторяется */   background-repeat: no-repeat;      
+/* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */   background-attachment: fixed;      
+/* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/   background-size: cover;      
+/* Цвет фона, который будет отображаться при загрузке фоновой картинки*/   background-color: #464646; }
+
+ /* Стили для логотипа */.logoAnim {
+    transition: transform 0.3s ease; /* Анимация увеличения */
+        }
+        /* Анимация увеличения при наведении курсора */.logoAnim:hover {
+            transform: scale(1.1); /* Увеличиваем размер логотипа */
+        }
+
+
+        .team:hover {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+.team:hover { 
+  text-decoration: none; 
+} 
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bouncing-text {
+    animation: bounce 2s infinite;
+}
+
+    </style>
+    </head>
+    <body>
+
+    
+
+</head>
+<body>
+    
+    <br>
+    <center><h1 class="slogan">Выживай, строй, ломай, это же анархия!</h1></center>
+    <br>
+    <center><a href="team.html"><h1 class="team">Наша команда</h1></a></center>
+    <br>
+    <center><a href="https://portixel.easydonate.ru"><h1 class="team">Магазин</h1></a></center>
+    <br>
+    <center><a href="PortixelPack.zip"><h1 class="team">Пак (Для ютуберов)</h1></a></center>
+    <br>
+    <center><h1 class="bouncing-text">IP - de1.fastnodes.space:25566</h1></center>
+</body>
+</html>
